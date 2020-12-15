@@ -1,11 +1,18 @@
+# imports
+from os import system, name
+
 # Variables
-word = "ANGULAR"
-wordArray = list(word)
 wordGuessed = 0
 guesses = 6
-wordSize = len(word)
 shots = 0
 guessed = 0
+word = input("Enter a word to guess: ").upper()
+wordSize = len(word)
+wordArray = list(word)
+if name == 'nt':
+    system('cls')
+else:
+    system('clear')
 
 
 # Functions
